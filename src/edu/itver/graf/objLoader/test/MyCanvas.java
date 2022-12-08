@@ -102,6 +102,7 @@ public class MyCanvas extends GLCanvas implements GLEventListener, KeyListener {
         // Cargar los objetos dentro del contexto de OpenGL
         try {
             obj1 = or.Load("./data/tree1.obj");
+//            obj1 = or.Load("./data/Cyprys_House.obj");
             System.out.println("Objeto 1 cargado :" + this.fileName);
         } catch (IOException ioe) {
             System.out.println(ioe.getMessage());
@@ -147,15 +148,6 @@ public class MyCanvas extends GLCanvas implements GLEventListener, KeyListener {
         if (obj1 != null) {
             obj1.draw(gl);
         }
-                    
-        if (obj2 != null) {
-            obj2.draw(gl);
-        }
-                
-        if (obj3 != null) {
-            obj3.draw(gl);
-        }
-        
         
         gl.glFlush();
 
