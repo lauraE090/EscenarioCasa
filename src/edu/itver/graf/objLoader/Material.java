@@ -41,7 +41,7 @@ public class Material {
     boolean isTextureD=false;
     
     ArrayList<Texture> txtrs = new ArrayList<Texture>();;
-    String baseDir="";
+    String baseDir="./data/";
         
             
     public Material(String name) {
